@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: DEVSEC
+    runs-on: [self-hosted, DEVSEC]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
