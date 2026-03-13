@@ -6,7 +6,7 @@ on:
 
 jobs:
   image_push:
-    runs-on: DEVSEC
+    runs-on: [self-hosted, DEVSEC]
     env:
       DOCKER_IMAGE: asivanan/petapp:${{ github.sha }}
 
